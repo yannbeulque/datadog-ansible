@@ -1,0 +1,6 @@
+datadog_checks:
+    process:
+      init_config:
+      instances:
+        - name: cbd
+          search_string: ['cbd']
