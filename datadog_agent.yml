@@ -2,4 +2,4 @@
   roles:
     - { role: datadog.datadog, become: yes }
   vars:
-    datadog_api_key: "<VOTRE_CLÉ_API_DD>"
+    datadog_api_key: {{datadog_api}}
