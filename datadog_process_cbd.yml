@@ -1,6 +1,10 @@
-datadog_checks:
-    process:
-      init_config:
-      instances:
-        - name: cbd
-          search_string: ['cbd']
+- hosts: all
+  roles:
+    - { role: datadog.datadog, become: yes }
+  vars:
+    datadog_checks:
+        process:
+          init_config:
+          instances:
+            - name: cbd
+              search_string: ['cbd']
