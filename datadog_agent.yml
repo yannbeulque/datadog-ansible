@@ -1,5 +1,3 @@
 - hosts: all
   roles:
     - { role: datadog.datadog, become: yes }
-  vars:
-    datadog_api_key: {{datadog_api}}
