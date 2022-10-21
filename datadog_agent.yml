@@ -1,3 +1,5 @@
 - hosts: all
   roles:
     - { role: datadog.datadog, become: yes }
+  vars:
+    datadog_site: datadoghq.eu
