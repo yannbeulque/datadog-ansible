@@ -3,3 +3,10 @@
     - { role: datadog.datadog, become: yes }
   vars:
     datadog_site: datadoghq.eu
+    datadog_config:
+      tags:
+        - env: prod
+        - domain: monitoring
+      logs_enabled: true
+      process_config:
+        enabled: "true"
