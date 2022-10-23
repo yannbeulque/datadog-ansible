@@ -2,5 +2,6 @@
   roles:
     - { role: datadog.datadog, become: yes }
   vars:
-    process_config:
-      enabled: 'true'
+    datadog_config:
+      process_config:
+        enabled: "true"
